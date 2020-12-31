@@ -12,7 +12,7 @@ let numofPost = process.argv[2];
         page.waitForNavigation({ waitUntil: "networkidle2" }),
         page.click("button[type='submit']"),
     ]);
-    await page.type("input[placeholder='Search']", "pepper_pepcoding");
+    await page.type("input[placeholder='Search']", "pepper_page");
     await page.waitForSelector(".drKGC .fuqBx a", { visible: true });
     await Promise.all([
         page.waitForNavigation({ waitUntil: "networkidle2" }),
